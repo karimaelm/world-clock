@@ -1,6 +1,9 @@
 body {
   font-family: sans-serif;
-  background-color: rgb(248, 237, 241);
+
+  background-image: url("image1.jpg");
+  background-size: cover; /* Adjust the image to cover the entire body */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 h1 {
   text-align: center;
