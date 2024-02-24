@@ -55,3 +55,19 @@ setInterval(updateTime, 1000);
 let citiesSelectElement = document.querySelector("#city");
 
 citiesSelectElement.addEventListener("change", updateCity);
+
+//background img
+
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("myVideo");
+
+  video.currentTime = 5;
+
+  video.playbackRate = 2;
+
+  video.addEventListener("timeupdate", function () {
+    if (this.currentTime >= 10) {
+      this.currentTime = 5;
+    }
+  });
+});
